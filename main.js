@@ -6,6 +6,7 @@ var overlay3 = document.querySelector('.overlay3');
 setTimeout(() => {
     overlay.style.right= "100%";
     overlay.style.opacity= "0";
+
     overlay1.style.right= "100%";
     overlay1.style.opacity= "0";
     overlay2.style.right= "100%";
@@ -53,7 +54,8 @@ var bodymiddleworkslink = document.querySelectorAll('.body__middle-works--link')
 var bodymiddleworkscard = document.querySelectorAll('.body__middle-works--card')
 bodymiddleworkslink.forEach(a=>{
     a.addEventListener('click',e=>{
-        console.log(a.textContent);
+        // console.log(a.textContent);
+
         e.preventDefault();
         if(document.querySelector('.body__middle-works--link--active') !== null){
             bodymiddleworkslink.forEach(b=>{
@@ -64,7 +66,7 @@ bodymiddleworkslink.forEach(a=>{
         bodymiddleworkscard.forEach(p=>{
             if(p.getAttribute("data-name").toUpperCase() === a.textContent){
                 if(document.querySelectorAll('.show')!== null){
-                    console.log("check");
+                    // console.log("check");
                     bodymiddleworkscard.forEach(t=>{
                         p.classList.add("hide");
                         p.classList.remove("show");
@@ -77,7 +79,7 @@ bodymiddleworkslink.forEach(a=>{
             }
             else if(a.textContent === "ALL") {
                 if(document.querySelectorAll('.show')!== null){
-                    console.log("check");
+                    // console.log("check");
                     bodymiddleworkscard.forEach(t=>{
                         p.classList.add("hide");
                         p.classList.remove("show");
@@ -107,7 +109,7 @@ btnLeft.style.opacity = 0.5;
 var dem = 0;
 btnLeft.addEventListener('click',e=>{
 let widthSlider = slider[0].getBoundingClientRect();
-    console.log(dem);
+    // console.log(dem);
     e.preventDefault();
     if(dem>0 && dem<slider.length){
         dem--;   
@@ -180,3 +182,41 @@ for(let i=0;i<bodymiddlearticlescard.length;i++){
         })
     })
 }
+var btn = document.querySelector('.btn__responsive');
+var btn1 = document.querySelectorAll('.btn__responsive span');
+var nav = document.querySelector('.nav');
+var body = document.querySelector('.body');
+var overlay4 = document.querySelector('.overlay4');
+btn.addEventListener('click',e=>{
+    btn1.forEach(b1=>{
+        b1.classList.toggle('open');
+    })
+    nav.classList.toggle('nav1');
+    overlay4.classList.toggle('hide');
+})
+
+var bodyheader = document.querySelector('.body__header');
+var bodymiddleservice = document.querySelector('.body__middle-service');
+var bodymiddleworks = document.querySelector('.body__middle-works');
+var bodymiddletestimonial = document.querySelector('.body__middle-testimonial');
+var bodymiddleexperience = document.querySelector('.body__middle-experience');
+var bodymiddlearticles = document.querySelector('.body__middle-articles');
+var bodymiddleinfo = document.querySelector('.body__middle-info');
+var listnav_bar = document.querySelectorAll('.nav__about-menu--link');
+window.addEventListener('scroll',e=>{
+    var scrollList = document.querySelectorAll('.list__scroll');
+    let y = window.pageYOffset;
+    let current = '';
+    scrollList.forEach(s=>{
+        if(y >= s.offsetTop - 10  && y < s.offsetTop + s.offsetHeight ){
+            current = s.getAttribute('id');
+        } 
+        listnav_bar.forEach(l=>{
+            l.classList.remove('nav__menu-active');
+            if(l.classList.contains(current)){
+                l.classList.add('nav__menu-active');
+            }
+        })
+    })
+})
+

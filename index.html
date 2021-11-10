@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
@@ -20,6 +21,8 @@
         </div>
         <div class="overlay3">
         </div>
+        <div class="overlay4">
+        </div>
         <div class="nav">
             <div class="nav__about">
                 <div class="nav__about-avata">
@@ -28,12 +31,12 @@
                 </div>
                 <div class="nav__about-menu">
                     <ul class="nav__about-menu--list">
-                        <li class="nav__about-menu--item "><a href="" class="nav__about-menu--link nav__menu-active"><i class="fas fa-home"></i>HOME</a></li>
-                        <li class="nav__about-menu--item"><a href="" class="nav__about-menu--link"><i class="fas fa-cog"></i>SERVICE</a></li>
-                        <li class="nav__about-menu--item"><a href="" class="nav__about-menu--link"><i class="fas fa-graduation-cap"></i>PORTFOLIO</a></li>
-                        <li class="nav__about-menu--item"><a href="" class="nav__about-menu--link"><i class="fas fa-briefcase"></i>RESUME</a></li>
-                        <li class="nav__about-menu--item"><a href="" class="nav__about-menu--link"><i class="fas fa-pencil-alt"></i>BLOG</a></li>
-                        <li class="nav__about-menu--item"><a href="" class="nav__about-menu--link"><i class="fas fa-phone"></i>CONTACT</a></li>
+                        <li class="nav__about-menu--item "><a href="#body_header" class="nav__about-menu--link nav__menu-active body_header"><i class="fas fa-home"></i>HOME</a></li>
+                        <li class="nav__about-menu--item"><a href="#body__middleservice" class="nav__about-menu--link body__middleservice"><i class="fas fa-cog"></i>SERVICE</a></li>
+                        <li class="nav__about-menu--item"><a href="#body__middleworks" class="nav__about-menu--link body__middleworks"><i class="fas fa-graduation-cap"></i>PORTFOLIO</a></li>
+                        <li class="nav__about-menu--item"><a href="#body__middletestimonial" class="nav__about-menu--link body__middletestimonial"><i class="fas fa-briefcase"></i>RESUME</a></li>
+                        <li class="nav__about-menu--item"><a href="#body__middleexperience" class="nav__about-menu--link body__middleexperience"><i class="fas fa-pencil-alt"></i>BLOG</a></li>
+                        <li class="nav__about-menu--item"><a href="#body__middlearticles" class="nav__about-menu--link body__middlearticles"><i class="fas fa-phone"></i>CONTACT</a></li>
                     </ul>
                 </div>                
             </div>
@@ -46,9 +49,8 @@
                 </ul>
             </div>
         </div>
-        <div class="body">
-                
-            <div class="body__header">
+        <div class="body">               
+            <div class="body__header list__scroll" id="body_header">
                 <div class="body__header-img">
                     <img src="imgs/avatar (1).jpg" alt="">
                 </div>
@@ -94,7 +96,6 @@
                             <path d="M716.68 32.9971H695.112V50.6338H720.166V56H688.55V6.23438H719.824V11.6348H695.112V27.6309H716.68V32.9971Z" stroke="black" stroke-width="10" mask="url(#path-1-outside-1_4:10)"/>
                             <path d="M746.587 35.8682H734.897V56H728.301V6.23438H744.775C750.381 6.23438 754.688 7.51042 757.695 10.0625C760.726 12.6146 762.241 16.3288 762.241 21.2051C762.241 24.304 761.398 27.0042 759.712 29.3057C758.049 31.6071 755.724 33.3275 752.739 34.4668L764.429 55.5898V56H757.388L746.587 35.8682ZM734.897 30.502H744.98C748.239 30.502 750.825 29.6589 752.739 27.9727C754.676 26.2865 755.645 24.0306 755.645 21.2051C755.645 18.1289 754.722 15.7705 752.876 14.1299C751.053 12.4893 748.41 11.6576 744.946 11.6348H734.897V30.502Z" stroke="black" stroke-width="10" mask="url(#path-1-outside-1_4:10)"/>
                             </svg>
-                            
                     </div>
                 <div class="body__header-icon">
                     <img src="imgs/decor1.png" data-speed="4" alt="">
@@ -121,57 +122,57 @@
                         <a href="">LEARN MORE</a>
                     </div>
                 </div>
-                <div class="body__middle-service">
+                <div class="body__middle-service list__scroll" id="body__middleservice">
                     <div class="container">
                         <span class="body__middle-content">WHAT I DO</span>
                         <h1>MY SERVICE</h1>
                         <div class="row">
-                            <div class="body__middle-service--card col l-4">
+                            <div class="body__middle-service--card col l-4 m-6 c-12">
                                 <div class="body__middle-service--icon">
                                     <i class="fas fa-palette"></i>
                                 </div>
                                 <h5>Graphic Design</h5>
-                                    <p>Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
+                                    <p>Modern and mobile-ready website that will help of your marketing.Proin lao reet elementum ligula, ac tincidunt lorem accumsan nec.</p>
                             </div>
-                            <div class="body__middle-service--card col l-4">
+                            <div class="body__middle-service--card col l-4 m-6 c-12">
                                 <div class="body__middle-service--icon">
                                     <i class="fas fa-laptop-house"></i>
                                 </div>
                                 <h5>Web Development</h5>
-                                    <p>Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
+                                    <p>Modern and mobile-ready website that will help of your marketing.Proin lao reet elementum ligula, ac tincidunt lorem accumsan nec.</p>
                             </div>
-                            <div class="body__middle-service--card col l-4">
+                            <div class="body__middle-service--card col l-4 m-6 c-12">
                                 <div class="body__middle-service--icon">
                                     <i class="fas fa-video"></i>
                                 </div>
                                 <h5>Media Marketing</h5>
-                                    <p>Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
+                                    <p>Modern and mobile-ready website that will help of your marketing.Proin lao reet elementum ligula, ac tincidunt lorem accumsan nec.</p>
                             </div>
-                            <div class="body__middle-service--card col l-4">
+                            <div class="body__middle-service--card col l-4 m-6 c-12">
                                 <div class="body__middle-service--icon">
                                     <i class="fas fa-users"></i>
                                 </div>
                                 <h5>Advetising</h5>
-                                    <p>Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
+                                    <p>Modern and mobile-ready website that will help of your marketing.Proin lao reet elementum ligula, ac tincidunt lorem accumsan nec.</p>
                             </div>
-                            <div class="body__middle-service--card col l-4">
+                            <div class="body__middle-service--card col l-4 m-6 c-12">
                                 <div class="body__middle-service--icon">
                                     <i class="fas fa-gamepad"></i>
                                 </div>
                                 <h5>Game Development</h5>
-                                    <p>Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
+                                    <p>Modern and mobile-ready website that will help of your marketing.Proin lao reet elementum ligula, ac tincidunt lorem accumsan nec.</p>
                             </div>
-                            <div class="body__middle-service--card col l-4">
+                            <div class="body__middle-service--card col l-4 m-6 c-12">
                                 <div class="body__middle-service--icon">
                                     <i class="far fa-chart-bar"></i>
                                 </div>
                                 <h5>Analytics</h5>
-                                    <p>Modern and mobile-ready website that will help of your marketing. Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec.</p>
+                                    <p>Modern and mobile-ready website that will help of your marketing. Proin lao reet elementum ligula, ac tincidunt lorem accumsan nec.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-works">
+                <div class="body__middle-works list__scroll" id="body__middleworks">
                     <div class="container">
                         <span class="body__middle-content">TAKE A LOOK AT</span>
                         <div class="body__middle-works--head">
@@ -184,7 +185,7 @@
                         </ul>    
                         </div>
                         <div class="row">
-                            <div class="body__middle-works--card col l-4" data-name="Slideshow">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Slideshow">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p1.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -195,7 +196,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Video">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Video">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p2.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -206,7 +207,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Slideshow">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Slideshow">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p3.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -217,7 +218,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Image">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Image">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p4.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -228,7 +229,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Video">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Video">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p5.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -239,7 +240,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Image">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Image">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p6.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -250,7 +251,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Image">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Image">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p7.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -261,7 +262,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Slideshow">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Slideshow">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p8.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -272,7 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="body__middle-works--card col l-4" data-name="Slideshow">
+                            <div class="body__middle-works--card col l-4 c-6" data-name="Slideshow">
                                 <div class="body__middle-works--image">
                                     <img src="imgs/p9.jpg" alt="">
                                     <div class="body__middle-works--overlay">
@@ -287,8 +288,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-testimonial">
-                    <div class="container">
+                <div class="body__middle-testimonial list__scroll" id="body__middletestimonial">
+                    <div class="body__middle-testimonial-responsive container">
                         <span class="body__middle-content">KIND WORDS</span>
                         <h1>TESTIMONIAL</h1>
                         <div class="row body__middle-testimonial--control">
@@ -320,6 +321,7 @@
                                         <h4>Tiffany Joseph</h4>
                                         <span>Web Developer</span>
                                     </div>
+                                    
                                 </div>
                             </div>
                             <div class="body__middle-testimonial--slider col l-12">
@@ -343,21 +345,21 @@
                                 </div>
                             </div>
                             <a href="" class="body__middle-testimonial--btn left"><i class="fas fa-chevron-left"></i></a>
-                            <a href="" class="body__middle-testimonial--btn right"><i class="fas fa-chevron-right"></i></a>
+                                    <a href="" class="body__middle-testimonial--btn right"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-experience">
+                <div class="body__middle-experience list__scroll" id="body__middleexperience">
                     <div class="container">
                         <span class="body__middle-content">WHAT I DO</span>
                         <h1>MY SERVICE</h1>
                         <div class="body__middle-experience--header row">
-                            <div class="col l-3">
+                            <div class="col l-3 c-12">
                                 <div class="body__middle-experience--header--left">
                                     <h2 class="body__middle-experience--header--content">My Experience</h2>
                                 </div>
                             </div>
-                            <div class="col l-9">
+                            <div class="col l-9 c-12">
                                 <div class="body__middle-experience--header--right row">
                                     <div class="body__middle-experience--header--info col l-12">
                                         <span class="body__middle-experience--header--info-name">Google Inc.</span>
@@ -394,54 +396,53 @@
                         </div>
 
                         <div class="body__middle-experience--footer row">
-                            <div class="col l-3">
+                            <div class="col l-3 c-12">
                                 <div class="body__middle-experience--footer--left">
                                     <h2 class="body__middle-experience--footer--content">My Education</h2>
                                 </div>
                             </div>
-                            <div class="col l-9">
+                            <div class="col l-9 c-12">
                                 <div class="body__middle-experience--footer--right row">
                                     
-                                        <div class="col l-6">
+                                        <div class="col l-6 c-12">
                                             <div class="body__middle-experience--footer--card">
                                                 <h5>Master in Arts</h5>
                                                 <h6 class="g">2006-2008</h6>
-                                                <p>Collaborate with creative and development teams on the execution of ideas.</p> 
+                                                <p>Collaborate with creative and development teams on the exe cution of ideas.</p> 
                                             </div>
                                         </div>
-                                        <div class="col l-6">
+                                        <div class="col l-6 c-12">
                                             <div class="body__middle-experience--footer--card">
                                                 <h5>Master in Arts</h5>
                                                 <h6 class="f">2006-2008</h6>
-                                                <p>Collaborate with creative and development teams on the execution of ideas.</p> 
+                                                <p>Collaborate with creative and development teams on the exe cution of ideas.</p> 
                                             </div>
                                         </div>
-                                        <div class="col l-6">
+                                        <div class="col l-6 c-12">
                                             <div class="body__middle-experience--footer--card">
                                                 <h5>Master in Arts</h5>
                                                 <h6 class="e">2006-2008</h6>
-                                                <p>Collaborate with creative and development teams on the execution of ideas.</p> 
+                                                <p>Collaborate with creative and development teams on the exe cution of ideas.</p> 
                                             </div>
                                         </div>
-                                        <div class="col l-6">
+                                        <div class="col l-6 c-12">
                                             <div class="body__middle-experience--footer--card">
                                                 <h5>Master in Arts</h5>
                                                 <h6 class="i">2006-2008</h6>
-                                                <p>Collaborate with creative and development teams on the execution of ideas.</p> 
+                                                <p>Collaborate with creative and development teams on the exe cution of ideas.</p> 
                                             </div>
                                         </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-articles">
+                <div class="body__middle-articles list__scroll" id="body__middlearticles">
                     <div class="container">
                         <span class="body__middle-content">Blog</span>
                         <h1>MY ARTICLES</h1>
                         <div class="row">
-                            <div class="col l-4">
+                            <div class="col l-4 c-12">
                                 <div class="body__middle-articles--card ">
                                     <div class="body__middle-articles--img">
                                         <img src="imgs/blog-1.jpg" alt="">
@@ -454,7 +455,7 @@
                                     <span>10 tips for drawing with coloured pencils</span>
                                 </div>
                             </div>
-                            <div class="col l-4">
+                            <div class="col l-4 c-12">
                                 <div class="body__middle-articles--card ">
                                     <div class="body__middle-articles--img">
                                         <img src="imgs/blog-2.jpg" alt="">
@@ -467,7 +468,7 @@
                                     <span>10 tips for drawing with coloured pencils</span>
                                 </div>
                             </div>
-                            <div class="col l-4">
+                            <div class="col l-4 c-12">
                                 <div class="body__middle-articles--card">
                                     <div class="body__middle-articles--img">
                                         <img src="imgs/blog-3.jpg" alt="">
@@ -483,14 +484,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-contact">
+                <div class="body__middle-contact list__scroll">
                     <div class="container">
                         <span class="body__middle-content">SAY HELLO</span>
                         <h1>CONTACT</h1>
                         <div class="body__middle-contact--gettouch">
                             <h3>Get in Touch</h3>
                             <div class="row">
-                                <div class="col l-4">
+                                <div class="col l-4 c-12">
                                     <div class="body__middle-contact--card">
                                         <div class="body__middle-contact--img">
                                             <i class="fas fa-mobile-alt"></i>
@@ -499,7 +500,7 @@
                                         <span>Call us</span>
                                     </div>
                                 </div>
-                                <div class="col l-4">
+                                <div class="col l-4 c-12">
                                     <div class="body__middle-contact--card">
                                         <div class="body__middle-contact--img">
                                             <i class="far fa-envelope"></i>
@@ -508,7 +509,7 @@
                                         <span>Email Us</span>
                                     </div>
                                 </div>
-                                <div class="col l-4">
+                                <div class="col l-4 c-12">
                                     <div class="body__middle-contact--card">
                                         <div class="body__middle-contact--img">
                                             <i class="fas fa-road"></i>
@@ -519,9 +520,43 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="body__middle-contact-form">
+                            <h3>Contact Form</h3>
+                            <div class="row">
+                                <div class="col l-6">
+                                    <input type="text" placeholder="Your Name *">
+                                </div>
+                                <div class="col l-6">
+                                    <input type="text" placeholder="Your Email *">
+                                </div>
+                                <div class="col l-12">
+                                    <input type="text" placeholder="Your Subject...">
+                                </div>
+                                <div class="col l-12">
+                                    <textarea name="" id="" cols="30" rows="4" placeholder="Your Message..."></textarea>
+                                </div>
+                                <div class="body__middle-contact-form-send col l-12">
+                                    <a href="">SEND</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer__text col l-12">
+                                <span>© Tiffany 2021 | All Right Reserved</span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
+        </div>
+        <div class="btn__responsive">
+                <span ></span>
+                <span ></span>
+                <span ></span>
         </div>
         <div class="change__color">
                     

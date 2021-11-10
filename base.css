@@ -1,13 +1,22 @@
 *{
     font-family: Montserrat, sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+.nav1{
+    left:15px !important;
+    z-index: 10000;
+}
+.overlay4.hide{
+    opacity: 1;
+    z-index: 10000;
 
 }
 .portfolio{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-   
 }
 .overlay{
     position: fixed;
@@ -52,6 +61,17 @@
     background: #007CED;
     opacity: 0.3;
     transition: all 2.5s ease-in-out;
+}
+.overlay4{
+    z-index: -9;
+    position: fixed;
+    top:0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav__menu-active{
@@ -117,10 +137,10 @@
     width: auto;
     margin: 0 auto;
     /* background-color: red; */
-
+    padding: 0 8px;
 }
 .row{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     margin-left: -8px;
