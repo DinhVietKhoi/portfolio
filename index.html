@@ -31,12 +31,13 @@
                 </div>
                 <div class="nav__about-menu">
                     <ul class="nav__about-menu--list">
-                        <li class="nav__about-menu--item "><a href="#body_header" class="nav__about-menu--link nav__menu-active body_header"><i class="fas fa-home"></i>HOME</a></li>
-                        <li class="nav__about-menu--item"><a href="#body__middleservice" class="nav__about-menu--link body__middleservice"><i class="fas fa-cog"></i>SERVICE</a></li>
-                        <li class="nav__about-menu--item"><a href="#body__middleworks" class="nav__about-menu--link body__middleworks"><i class="fas fa-graduation-cap"></i>PORTFOLIO</a></li>
-                        <li class="nav__about-menu--item"><a href="#body__middletestimonial" class="nav__about-menu--link body__middletestimonial"><i class="fas fa-briefcase"></i>RESUME</a></li>
-                        <li class="nav__about-menu--item"><a href="#body__middleexperience" class="nav__about-menu--link body__middleexperience"><i class="fas fa-pencil-alt"></i>BLOG</a></li>
-                        <li class="nav__about-menu--item"><a href="#body__middlearticles" class="nav__about-menu--link body__middlearticles"><i class="fas fa-phone"></i>CONTACT</a></li>
+                        <li class="nav__about-menu--item"><span  class="nav__about-menu--link nav__menu-active home"><i class="fas fa-home"></i>HOME</span></li>
+                        <li class="nav__about-menu--item"><span class="nav__about-menu--link service"><i class="fas fa-cog"></i>SERVICE</span></li>
+                        <li class="nav__about-menu--item"><span class="nav__about-menu--link work"><i class="fas fa-graduation-cap"></i>WORK</span></li>
+                        <li class="nav__about-menu--item"><span  class="nav__about-menu--link project"><i class="fas fa-briefcase"></i>PROJECT</span></li>
+                        <li class="nav__about-menu--item"><span class="nav__about-menu--link history"><i class="fas fa-graduation-cap"></i></i>HISTORY</span></li>
+                        <li class="nav__about-menu--item"><span  class="nav__about-menu--link blog"><i class="fas fa-pencil-alt"></i>BLOG</span></li>
+                        <li class="nav__about-menu--item"><span class="nav__about-menu--link contact"><i class="fas fa-phone"></i>CONTACT</span></li>
                     </ul>
                 </div>                
             </div>
@@ -113,7 +114,8 @@
                 </div>
             </div>
             <div class="body__middle">
-                <div class="body__middle-info">
+
+                <div class="body__middle-info list__scroll info" id="body__middleinfo">
                     <span>HI THERE !</span>
                     <h1>I'M ALICE JOSEPH</h1>
                     <span>Passionate designer & developer who loves simplicity in things and crafts beautiful user interfaces with love.</span>
@@ -122,7 +124,7 @@
                         <a href="">LEARN MORE</a>
                     </div>
                 </div>
-                <div class="body__middle-service list__scroll" id="body__middleservice">
+                <div class="body__middle-service list__scroll service" id="body__middleservice">
                     <div class="container">
                         <span class="body__middle-content">WHAT I DO</span>
                         <h1>MY SERVICE</h1>
@@ -172,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-works list__scroll" id="body__middleworks">
+                <div class="body__middle-works list__scroll works" id="body__middleworks">
                     <div class="container">
                         <span class="body__middle-content">TAKE A LOOK AT</span>
                         <div class="body__middle-works--head">
@@ -288,10 +290,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-testimonial list__scroll" id="body__middletestimonial">
+                <div class="body__middle-testimonial list__scroll testimonial" id="body__middletestimonial">
                     <div class="body__middle-testimonial-responsive container">
                         <span class="body__middle-content">KIND WORDS</span>
-                        <h1>TESTIMONIAL</h1>
+                        <h1>MY PROJECT</h1>
                         <div class="row body__middle-testimonial--control">
                             <div class="body__middle-testimonial--slider col l-12">
                                 <div class="body__middle-testimonial--card">
@@ -348,11 +350,11 @@
                                     <a href="" class="body__middle-testimonial--btn right"><i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="body__middle-experience list__scroll" id="body__middleexperience">
+                </div> 
+                <div class="body__middle-experience list__scroll experience" id="body__middleexperience">
                     <div class="container">
                         <span class="body__middle-content">WHAT I DO</span>
-                        <h1>MY SERVICE</h1>
+                        <h1>HISTORY</h1>
                         <div class="body__middle-experience--header row">
                             <div class="col l-3 c-12">
                                 <div class="body__middle-experience--header--left">
@@ -437,7 +439,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-articles list__scroll" id="body__middlearticles">
+                <div class="body__middle-articles list__scroll articles" id="body__middlearticles">
                     <div class="container">
                         <span class="body__middle-content">Blog</span>
                         <h1>MY ARTICLES</h1>
@@ -484,7 +486,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="body__middle-contact list__scroll">
+                <div class="body__middle-contact list__scroll contact" id="body__middlecontact">
                     <div class="container">
                         <span class="body__middle-content">SAY HELLO</span>
                         <h1>CONTACT</h1>
@@ -542,6 +544,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                 <footer class="footer">
                     <div class="container">
                         <div class="row">

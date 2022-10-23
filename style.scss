@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth
+}
 .nav{
     position: fixed;
     top:15px;
@@ -18,7 +21,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 50%;
         &-avata{
             display: flex;
             flex-direction: column;
@@ -58,7 +60,8 @@
             }
             &--item{
                 list-style: none;
-                & a{
+                & span{
+                    cursor: pointer;
                     box-sizing: content-box;
                     font-family: LineIcons!important;
                     font-size: 12px;

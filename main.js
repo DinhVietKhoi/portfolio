@@ -66,7 +66,6 @@ bodymiddleworkslink.forEach(a=>{
         bodymiddleworkscard.forEach(p=>{
             if(p.getAttribute("data-name").toUpperCase() === a.textContent){
                 if(document.querySelectorAll('.show')!== null){
-                    // console.log("check");
                     bodymiddleworkscard.forEach(t=>{
                         p.classList.add("hide");
                         p.classList.remove("show");
@@ -195,28 +194,93 @@ btn.addEventListener('click',e=>{
     overlay4.classList.toggle('hide');
 })
 
-var bodyheader = document.querySelector('.body__header');
-var bodymiddleservice = document.querySelector('.body__middle-service');
-var bodymiddleworks = document.querySelector('.body__middle-works');
-var bodymiddletestimonial = document.querySelector('.body__middle-testimonial');
-var bodymiddleexperience = document.querySelector('.body__middle-experience');
-var bodymiddlearticles = document.querySelector('.body__middle-articles');
-var bodymiddleinfo = document.querySelector('.body__middle-info');
+
+var home = document.querySelector('.home');
+var service = document.querySelector('.service');
+var work = document.querySelector('.work');
+var project = document.querySelector('.project');
+var historyy = document.querySelector('.history');
+var blog = document.querySelector('.blog');
+var contact = document.querySelector('.contact');
 var listnav_bar = document.querySelectorAll('.nav__about-menu--link');
-window.addEventListener('scroll',e=>{
-    var scrollList = document.querySelectorAll('.list__scroll');
-    let y = window.pageYOffset;
-    let current = '';
-    scrollList.forEach(s=>{
-        if(y >= s.offsetTop - 10  && y < s.offsetTop + s.offsetHeight ){
-            current = s.getAttribute('id');
-        } 
-        listnav_bar.forEach(l=>{
-            l.classList.remove('nav__menu-active');
-            if(l.classList.contains(current)){
-                l.classList.add('nav__menu-active');
-            }
-        })
+const removeActive = () => {
+    listnav_bar.forEach(e => {
+        e.classList.remove("nav__menu-active")
     })
+}
+window.addEventListener('scroll', e => {
+
+    let y = window.scrollY;
+    if (y >= 0 && y <= 500) {
+        removeActive()
+        home.classList.add('nav__menu-active')
+    }
+    else if (y > 500 && y <= 1330) {
+        removeActive()
+        service.classList.add('nav__menu-active')
+
+    }
+    else if (y > 1330 && y <= 2386) {
+        removeActive()
+        work.classList.add('nav__menu-active')
+
+    }
+    else if (y > 2386 && y <= 3085) {
+        removeActive()
+        project.classList.add('nav__menu-active')
+
+    }
+    else if (y > 3085 && y <= 4240) {
+        removeActive()
+        historyy.classList.add('nav__menu-active')
+
+    }
+    else if (y > 4240 && y <= 4870) {
+        removeActive()
+        blog.classList.add('nav__menu-active')
+
+    }
+    else if (y > 4870) {
+        removeActive()
+        contact.classList.add('nav__menu-active')
+    }
+
 })
 
+//click navbar next slide
+let navbar = document.querySelectorAll(".nav__about-menu--item")
+let navbarElement = [...navbar]
+console.log(navbarElement)
+navbarElement.map((nav,index) => {
+    nav.addEventListener("click", (item) => {
+        switch (index) {
+            case 0:
+                window.scrollTo(0, 0)
+                break; 
+            case 1:
+                window.scrollTo(0, 1000)
+                break; 
+                
+            case 2:
+                window.scrollTo(0, 1812)
+                break; 
+                
+            case 3:
+                window.scrollTo(0, 2910)
+                break; 
+                
+            case 4:
+                window.scrollTo(0, 3578)
+                break;
+            case 5:
+                window.scrollTo(0, 4778)
+                break; 
+            case 6:
+                window.scrollTo(0, 5413)
+                break;
+            default:
+                break;
+        }
+    })
+    
+})
