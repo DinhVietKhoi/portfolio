@@ -16,6 +16,7 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #007CED;
+  overflow: auto;
 }
 .nav__about {
   width: 100%;

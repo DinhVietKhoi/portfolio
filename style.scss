@@ -15,6 +15,7 @@ html{
     justify-content: space-between;
     align-items: center;
     background-color: #007CED;
+    overflow: auto;
     &__about{
         width: 100%;
         display: flex;
