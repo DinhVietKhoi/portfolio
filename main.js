@@ -195,52 +195,61 @@ btn.addEventListener('click',e=>{
 })
 
 
-var home = document.querySelector('.home');
-var service = document.querySelector('.service');
-var work = document.querySelector('.work');
-var project = document.querySelector('.project');
-var historyy = document.querySelector('.history');
-var blog = document.querySelector('.blog');
-var contact = document.querySelector('.contact');
+var home = document.querySelector('.home0');
+var service = document.querySelector('.service0');
+var work = document.querySelector('.work0');
+var project = document.querySelector('.project0');
+var historyy = document.querySelector('.history0');
+var blog = document.querySelector('.blog0');
+var contact = document.querySelector('.contact0');
 var listnav_bar = document.querySelectorAll('.nav__about-menu--link');
+console.log(service)
+//get width element
+var page1 = document.querySelector('.body__header');
+var page2 = document.querySelector('.info');
+var page3 = document.querySelector('.service');
+var page4 = document.querySelector('.works');
+var page5 = document.querySelector('.testimonial');
+var page6 = document.querySelector('.experience');
+var page7 = document.querySelector('.articles');
+var page8 = document.querySelector('.contact');
 const removeActive = () => {
     listnav_bar.forEach(e => {
         e.classList.remove("nav__menu-active")
     })
 }
 window.addEventListener('scroll', e => {
-
     let y = window.scrollY;
-    if (y >= 0 && y <= 500) {
+    if (y >= 0 && y <= page1.offsetHeight + page2.offsetHeight) {
         removeActive()
         home.classList.add('nav__menu-active')
     }
-    else if (y > 500 && y <= 1330) {
+    else if (y > page1.offsetHeight + page2.offsetHeight && y <= page1.offsetHeight + page2.offsetHeight+page3.offsetHeight) {
         removeActive()
         service.classList.add('nav__menu-active')
-
     }
-    else if (y > 1330 && y <= 2386) {
+    else if (y > page1.offsetHeight + page2.offsetHeight+page3.offsetHeight && y <= page1.offsetHeight + page2.offsetHeight+page3.offsetHeight+page4.offsetHeight) {
         removeActive()
         work.classList.add('nav__menu-active')
 
     }
-    else if (y > 2386 && y <= 3085) {
+    else if (y > page1.offsetHeight + page2.offsetHeight+page3.offsetHeight+page4.offsetHeight && y <= page1.offsetHeight + page2.offsetHeight+page3.offsetHeight+page4.offsetHeight+page5.offsetHeight) {
         removeActive()
         project.classList.add('nav__menu-active')
 
     }
-    else if (y > 3085 && y <= 4240) {
+    else if (y > page1.offsetHeight + page2.offsetHeight+page3.offsetHeight+page4.offsetHeight+page5.offsetHeight && y <= page1.offsetHeight + page2.offsetHeight+page3.offsetHeight+page4.offsetHeight+page5.offsetHeight+page6.offsetHeight) {
         removeActive()
         historyy.classList.add('nav__menu-active')
 
     }
-    else if (y > 4240 && y <= 4870) {
+    else if (y > page1.offsetHeight + page2.offsetHeight + page3.offsetHeight + page4.offsetHeight + page5.offsetHeight + page6.offsetHeight
+        && y <= page1.offsetHeight + page2.offsetHeight+page3.offsetHeight+page4.offsetHeight+page5.offsetHeight+page6.offsetHeight+page7.offsetHeight) {
         removeActive()
         blog.classList.add('nav__menu-active')
 
     }
-    else if (y > 4870) {
+    else if (y > page1.offsetHeight + page2.offsetHeight+page3.offsetHeight+page4.offsetHeight+page5.offsetHeight+page6.offsetHeight+page7.offsetHeight) {
         removeActive()
         contact.classList.add('nav__menu-active')
     }
@@ -255,28 +264,31 @@ navbarElement.map((nav,index) => {
     nav.addEventListener("click", (item) => {
         switch (index) {
             case 0:
-                window.scrollTo(0, 0)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
                 break; 
             case 1:
-                window.scrollTo(0, 1000)
+                window.scrollTo({ top: 1000, behavior: 'smooth' })
                 break; 
                 
             case 2:
-                window.scrollTo(0, 1812)
+                window.scrollTo({
+                    top: 1760
+                    , behavior: 'smooth'
+                })
                 break; 
                 
             case 3:
-                window.scrollTo(0, 2910)
+                window.scrollTo( { top: 3140, behavior: 'smooth' })
                 break; 
                 
             case 4:
-                window.scrollTo(0, 3578)
+                window.scrollTo( { top: 3778, behavior: 'smooth' })
                 break;
             case 5:
-                window.scrollTo(0, 4778)
+                window.scrollTo( { top: 4928, behavior: 'smooth' })
                 break; 
             case 6:
-                window.scrollTo(0, 5413)
+                window.scrollTo( { top: 5513, behavior: 'smooth' })
                 break;
             default:
                 break;
